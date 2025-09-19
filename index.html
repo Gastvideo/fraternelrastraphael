@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fraternel Saint Raphaël - Boutique en ligne</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* NAVIGATION */
+    nav {
+      background: #4CAF50;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    nav .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffeb3b;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background: #66BB6A;
+      color: white;
+    }
+
+    header p {
+      font-size: 0.9em;
+      margin-top: 5px;
+    }
+
+    /* PRODUITS */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card h2 {
+      color: #333;
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+
+    .price {
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #E91E63;
+      margin: 10px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+      color: white;
+      padding: 10px 18px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg, #ff4b2b, #ff416c);
+      transform: scale(1.05);
+    }
+
+    /* FOOTER */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    /* RESPONSIVE MENU */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="logo">Fraternel Saint Raphaël</div>
+    <ul>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">Produits</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HEADER -->
+  <header>
+    🛍️ Bienvenue sur Fraternel Saint Raphaël  
+    <p>Boutique en ligne : Prêt-à-porter | GSM | Quincaillerie & Divers</p>
+  </header>
+
+  <!-- PRODUITS -->
+  <div class="container">
+
+    <!-- Produit 1 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/350x400.png?text=Robe+Rose" alt="Robe Rose">
+      <h2>👗 Robe Rose</h2>
+      <p>Robe moderne, élégante et confortable pour adultes et enfants.</p>
+      <p class="price">💰 4 500 FCFA</p>
+      <a href="#" class="btn">Acheter avec Paysdunuya</a>
+    </div>
+
+    <!-- Produit 2 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/350x400.png?text=Chemise+Homme" alt="Chemise Homme">
+      <h2>👔 Chemise Homme</h2>
+      <p>Chemise classique et élégante pour toutes les occasions.</p>
+      <p class="price">💰 6 000 FCFA</p>
+      <a href="#" class="btn">Acheter avec Paysdunuya</a>
+    </div>
+
+    <!-- Produit 3 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/350x400.png?text=T%C3%A9l%C3%A9phone+Android" alt="Téléphone Android">
+      <h2>📱 Téléphone Android</h2>
+      <p>Smartphone performant avec caméra HD et grande autonomie.</p>
+      <p class="price">💰 45 000 FCFA</p>
+      <a href="#" class="btn">Acheter avec Paysdunuya</a>
+    </div>
+
+    <!-- Produit 4 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/350x400.png?text=Marteau+de+Quincaillerie" alt="Marteau">
+      <h2>🔨 Marteau</h2>
+      <p>Outil robuste pour vos travaux de bricolage et de construction.</p>
+      <p class="price">💰 2 500 FCFA</p>
+      <a href="#" class="btn">Acheter avec Paysdunuya</a>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>📞 0169223575 | 📧 fraternelstraphael69@gmail.com</p>
+    <p>&copy; 2025 Fraternel Saint Raphaël - Tous droits réservés</p>
+  </footer>
+
+</body>
+  </html>
